@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bodybench"
+version = "0.1.0"
+description = "Benchmark for image protections against nudifying inpainting attacks"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3",
+  "pandas>=2.0",
+  "pyarrow>=14",
+  "pillow>=10.0",
+  "pyyaml>=6.0",
+  "tqdm>=4.65",
+  "scipy>=1.11",
+  "scikit-image>=0.22",
+  "huggingface_hub>=0.23",
+  "torch>=2.1",
+  "diffusers>=0.27",
+  "transformers>=4.40,<5",
+  "accelerate>=0.27",
+  "onnxruntime>=1.17",
+  "nudenet>=3.4",
+  "tensorflow>=2.15",
+  "tf-keras>=2.15",
+  "deepface>=0.0.93",
+  "retina-face>=0.0.17",
+  "image-reward>=1.5",
+  # image-reward imports `clip` but does not declare it; the PyPI build (openai-clip)
+  # needs pkg_resources, which current setuptools removed, so use upstream.
+  "clip @ git+https://github.com/openai/CLIP.git",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.2"]
+
+[project.scripts]
+bodybench = "bodybench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bodybench*"]
