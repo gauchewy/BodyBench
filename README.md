@@ -139,3 +139,21 @@ instrument for measuring whether protective perturbations work. Our own finding 
   controlled defensive-research contexts;
 * to produce content depicting minors, or with images of minors;
 
+## Citation
+
+If you use this code or build on this work, please cite the paper below. This paper has two co-first authors. For in-text citations, please use **Qiwei & Abdel Magid et al. (2026)** when citing the paper in text.
+
+Please note that “Abdel Magid” is a two-word last name.
+
+```bibtex
+@inproceedings{li2026bodybench,
+  title     = {BODYBENCH: Evaluating Adversarial Image Defenses Against AI Nudification Inpainting},
+  author    = {Li Qiwei{*} and Salma {Abdel Magid}{*} and Olga Russakovsky and Eric Gilbert and Sarita Schoenebeck},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS), Evaluations and Datasets Track},
+  year      = {2026}
+}
+```
+
+\* Denotes equal contribution.
+
+Please feel free to reach out to us with any questions at [rrll@umich.edu](mailto:rrll@umich.edu) or [sabdelmagid@princeton.edu](mailto:sabdelmagid@princeton.edu)
