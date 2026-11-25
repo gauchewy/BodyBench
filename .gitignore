@@ -1,0 +1,72 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ── Environments ────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.conda/
+.python-version
+
+# ── Editors / OS ────────────────────────────────────────────────────────────
+.DS_Store
+.vscode/
+.idea/
+*.swp
+.ipynb_checkpoints/
+
+# ── Model weights and checkpoints ────────────────────────────
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.tflite
+*.task
+*.safetensors
+*.h5
+
+# ── Dataset  ─────────────────────────────
+data/
+protected/
+protected_images.tar
+datasets/
+**/NPBench/
+**/protected_images/
+*.tar
+*.zip
+
+# ── Generated images and evaluation outputs ─────────────────────────────────
+results/
+results_quick/
+outputs/
+attacks/
+**/attacks/
+**/masks_dilated/
+per_image.csv
+summary.csv
+summary.md
+run_metadata.json
+examples/outputs/
+examples/synthetic_demo/
+
+# ── Caches ──────────────────────────────────────────────────────────────────
+.cache/
+hf_cache/
+.huggingface/
+
+# ── Cluster / logs ──────────────────────────────────────────────────────────
+logs/
+slurm-*.out
+*.log
